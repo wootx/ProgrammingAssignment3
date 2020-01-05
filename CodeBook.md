@@ -5,7 +5,7 @@ This code book describes the variables, the data, and any transformations or wor
 ## Identifiers
 
 * `Subject` - Test subject's unique Id
-* `Activity` - Theh type of activity performed by the subject during the capturing of the measurements.
+* `Activity` - The type of activity performed by the subject during the capturing of the measurements.
 
 ## Types of Measurements
 
