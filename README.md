@@ -9,6 +9,6 @@ The R script, **run_analysis.R** does following:
 
 1. From loaded train and test datasets, kept only those columns which are mean of standard deviation
 
-1. Generated 'Tidy Dataset'with average (mean) of each variable for each subject and activity pair. 
+1. Generated 'Tidy Dataset' with mean of each variable for each subject and activity pair. 
 
 ##### The result is shown in the file tidy_dataset.txt.
