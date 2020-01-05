@@ -11,6 +11,7 @@
 # http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 ##
 library(reshape2)
+library(dplyr)
 
 
 # 0. Dowanloading dataset from web
@@ -72,8 +73,9 @@ x_data <- x_data[stdMeanCols]
 allData <- cbind(subject_data, y_data, x_data)
 colnames(allData) <- c("Subject", "Activity", stdMeanCols.Names)
 
+allData$Subject <- factor(allData$Subject)
 allData$Activity <- factor(allData$Activity, levels = act_label[,1], labels = act_label[,2])
-allData$Subject <- as.factor(allData$Subject)
+
 
 
 # 4. Creates independent tidy data set with the average of each variable for each activity and each subject
