@@ -74,7 +74,7 @@ allData <- cbind(subject_data, y_data, x_data)
 colnames(allData) <- c("Subject", "Activity", stdMeanCols.Names)
 
 allData$Subject <- factor(allData$Subject)
-allData$Activity <- factor(allData$Activity, levels = act_label[,1], labels = act_label[,2])
+allData$Activity <- factor(allData$Activity,  labels = act_label[,2])
 
 
 
